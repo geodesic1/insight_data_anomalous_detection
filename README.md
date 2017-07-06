@@ -1,12 +1,12 @@
-This is a C++ project for the insight data science anomalous detection project(https://github.com/InsightDataScience/anomaly_detection),
+This is a C++ project for the insight data science anomalous detection project (https://github.com/InsightDataScience/anomaly_detection),
 it requires C++ 11 or above to compile and run.
 
 
 The context of this problem is to build a real-time platform to analyze purchases within a social network of users, and detect any behavior that is far from the average within that social network.There are two flexible parameters in this problem:
 
-D: the number of degrees that defines a user's social network.(For example "friend of a friend" is Degree = 2, and "friend of a friend of a friend" represents Degree = 3)
+   D: the number of degrees that defines a user's social network.(For example "friend of a friend" is Degree = 2, and "friend of a friend of a friend" represents Degree = 3)
 
-T: the number of consecutive purchases made by a user's social network (not including the user's own purchases)
+   T: the number of consecutive purchases made by a user's social network (not including the user's own purchases)
 
 A purchase amount is anomalous if it's more than 3 standard deviations from the mean of the last T purchases in the user's Dth degree social network. 
 
@@ -30,20 +30,20 @@ To resolve the anomalous detection problem, I developed the project with the fol
 
 The project contains the following test cases:
 
-Test1:  The test case from insight data science repository;
+  Test 1:  The test case from insight data science repository;
 
-Test2:  Test case when the number of candidate puchases is greater than T in Dth-degree social network.
-Test3:  Test case when the number of candidate puchases is less than T in Dth-degree social network.
-Test4:  Test case to check whether "stream_log" purchase updates the whole graph.
+  Test 2:  Test case when the number of candidate puchases is greater than T in Dth-degree social network.
+  Test 3:  Test case when the number of candidate puchases is less than T in Dth-degree social network.
+  Test 4:  Test case to check whether "stream_log" purchase updates the whole graph.
 
-Test5:  Test case to check whether "stream_log" friend/unfriend updates the whole graph.
-Test6:  Test case where the candidate purchase history is from multiple user nodes in the calculation of statistics. 
+  Test 5:  Test case to check whether "stream_log" friend/unfriend updates the whole graph.
+  Test 6:  Test case where the candidate purchase history is from multiple user nodes in the calculation of statistics. 
 
-Test7:  Test case for the heap structure in the calculation of statistics. 
+  Test 7:  Test case for the heap structure in the calculation of statistics. 
 
-Test8:  Test case for invalid input
+  Test 8:  Test case for invalid input
 
-Test9:  Test case for large value of D, large degree of social network.
+  Test 9:  Test case for large value of D, large degree of social network.
 
-Test10: Test case when there is no output file.
+  Test 10: Test case when there is no output file.
 
